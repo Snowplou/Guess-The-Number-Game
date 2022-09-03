@@ -1,0 +1,23 @@
+<link href="properties.css" rel="stylesheet">
+
+<body>
+    <div id="page1">
+        <p id = "mainTitle">Guess The Number Game</p>
+        <button id="startGame" onclick="start()">Start Game</button>
+        <p id="rangeDisplay">Range: 0-100</p>
+        <input id="rangeSelect" type="range" min="10" max="100" value="100" oninput="rangeInput()">
+    </div>
+
+    <div id="page2">
+        <p id="title">Guess A Number</p>
+        <ul id="history" style="display: flex;"></ul>
+        <form onsubmit="return false">
+            <input id="numberInput" type="number" max="100" min="0" required="true">
+            <input id = "inputSubmit" type="submit" value="Submit" onclick="inputSubmitted()">
+        </form>
+        <button id = "playAgain" onclick = "refresh()">Play Again</button>
+    </div>
+    <!-- <button id = "fakeButton"></button> -->
+    <button id = "secretButton" onclick = "activateSecret()"></button>
+</body>
+<script src="index.js"></script>
