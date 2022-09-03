@@ -1,6 +1,6 @@
 document.getElementById("startGame").style = "margin-top: " + (window.screen.availHeight / 3.2) + "px;"
 document.getElementById("rangeDisplay").style = "margin-top: " + (window.screen.availHeight / 10) + "px;"
-
+//test
 let maxNum = 100
 let numberChosen
 let numbersPicked = []
