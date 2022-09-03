@@ -8,7 +8,6 @@ let numbersPicked = []
 function start() {
     document.getElementById("page1").style = "display: none;"
     document.getElementById("page2").style = "display: block;"
-    // document.getElementById("numberInput").style = "max: " + maxNum + ";"
     document.getElementById("numberInput").max = maxNum
 
     numberChosen = Math.round(Math.random() * (Number(maxNum) + 1))
@@ -54,11 +53,11 @@ function inputSubmitted() {
     document.getElementById("numberInput").value = ""
 }
 
-function refresh(){
+function refresh() {
     location.reload()
 }
 
-function activateSecret(){
+function activateSecret() {
     document.getElementById("startGame").style.color = "white"
     document.getElementById("startGame").style.backgroundColor = "red"
     document.getElementById("startGame").innerText = "Start Game  😈"
